@@ -7,7 +7,7 @@ const Main = () => {
 };
 
 const Profile = () => {
-  return <h2>Профиль</h2>;
+  return <h2>Страница профиля</h2>;
 };
 
 const Messages = () => {
