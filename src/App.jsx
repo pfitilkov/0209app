@@ -17,7 +17,7 @@ function App(props) {
             className="nav flex-column nav-pills"
             aria-orientation="vertical"
           >
-            <NavLink className="nav-link" id="main" to="/">
+            <NavLink className="nav-link" id="main" to="/main">
               Главная
             </NavLink>
             <NavLink className="nav-link" id="profile" to="profile">
@@ -34,7 +34,7 @@ function App(props) {
         <div className="col-9">
           <Routes>
             <Route path="/main" element={<Main />} /> 
-            <Route path="/profile" element={<Profile function={props.function.key_getUser} />} />
+            <Route path="/profile/*" element={<Profile function={props.function.key_getUser} />} />
             <Route path="/friends" element={<Friends function={props.function.key_getUsers} />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>
